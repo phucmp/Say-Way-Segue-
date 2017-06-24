@@ -100,7 +100,7 @@
                                     <constraint firstAttribute="width" constant="147" id="idK-tl-bRp"/>
                                     <constraint firstAttribute="height" constant="30" id="k4A-iT-yXh"/>
                                 </constraints>
-                                <state key="normal" title="Load Third Screen"/>
+                                <state key="normal" title="Play Song"/>
                                 <connections>
                                     <action selector="loadThirdScreenPressed:" destination="tJB-fa-uRF" eventType="touchUpInside" id="dzv-No-sY0"/>
                                 </connections>
@@ -134,7 +134,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w57-Xy-l5y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="w57-Xy-l5y">
                                 <rect key="frame" x="70" y="72" width="234" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="234" id="SEn-EC-znF"/>
