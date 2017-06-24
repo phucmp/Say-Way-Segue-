@@ -27,7 +27,9 @@ class MusicListVC: UIViewController {
 
     @IBAction func loadThirdScreenPressed(_ sender: Any) {
         let songTitle = songRequestLbl.text
-        performSegue(withIdentifier: "PlaySongVC", sender: songTitle)
+        if songTitle != "" {
+            performSegue(withIdentifier: "PlaySongVC", sender: songTitle)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
