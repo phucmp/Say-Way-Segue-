@@ -33,12 +33,16 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOy-tJ-F74">
-                                <rect key="frame" x="133.5" y="171" width="108" height="30"/>
+                                <rect key="frame" x="77" y="171" width="220" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="JfT-WH-pNm"/>
-                                    <constraint firstAttribute="width" constant="108" id="nKC-Cd-S0i"/>
+                                    <constraint firstAttribute="height" constant="30" id="GTa-ng-EUX"/>
+                                    <constraint firstAttribute="width" constant="220" id="u2t-GZ-gFA"/>
                                 </constraints>
-                                <state key="normal" title="Login Now"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="tJB-fa-uRF" kind="show" id="zmf-UK-0SJ"/>
                                 </connections>
@@ -60,6 +64,8 @@
                             <constraint firstItem="qtm-7N-arG" firstAttribute="top" secondItem="FCg-R9-zIJ" secondAttribute="bottom" constant="-1" id="BYr-ZI-eaV"/>
                             <constraint firstItem="FCg-R9-zIJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Imy-eD-SR7"/>
                             <constraint firstItem="WOy-tJ-F74" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bzE-Zz-4kH"/>
+                            <constraint firstItem="WOy-tJ-F74" firstAttribute="trailing" secondItem="qtm-7N-arG" secondAttribute="trailing" id="eIC-6c-6oU"/>
+                            <constraint firstItem="WOy-tJ-F74" firstAttribute="leading" secondItem="qtm-7N-arG" secondAttribute="leading" id="f7y-xJ-0Ca"/>
                             <constraint firstItem="qtm-7N-arG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oF7-mg-mOQ"/>
                             <constraint firstItem="WOy-tJ-F74" firstAttribute="top" secondItem="qtm-7N-arG" secondAttribute="bottom" constant="51" id="yfL-ut-KIp"/>
                         </constraints>
@@ -131,6 +137,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="songRequestLbl" destination="Hys-Oe-ykc" id="Wjn-aS-8Ui"/>
                         <segue destination="eu1-bj-lft" kind="showDetail" identifier="PlaySongVC" id="xYm-aB-Dm8"/>
                     </connections>
                 </viewController>

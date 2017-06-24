@@ -10,6 +10,8 @@ import UIKit
 
 class MusicListVC: UIViewController {
 
+    @IBOutlet weak var songRequestLbl: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,7 +26,7 @@ class MusicListVC: UIViewController {
 
 
     @IBAction func loadThirdScreenPressed(_ sender: Any) {
-        let songTitle = "Quit Playing Games With My Heart"
+        let songTitle = songRequestLbl.text
         performSegue(withIdentifier: "PlaySongVC", sender: songTitle)
     }
     
