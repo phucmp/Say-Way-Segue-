@@ -8,12 +8,13 @@
 
 import UIKit
 
-class MusicListVC: UIViewController {
+class MusicListVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var songRequestLbl: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        songRequestLbl.delegate = self
 
         // Do any additional setup after loading the view.
         
@@ -30,6 +31,9 @@ class MusicListVC: UIViewController {
         if songTitle != "" {
             performSegue(withIdentifier: "PlaySongVC", sender: songTitle)
         }
+        else {
+            songRequestLbl.placeholder = "Please enter a song"
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,6 +43,11 @@ class MusicListVC: UIViewController {
                 destination.selectedSong = song
             }
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     /*
